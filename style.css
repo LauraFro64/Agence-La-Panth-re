@@ -1,11 +1,99 @@
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/** NOUVELLES COMMANDES CREEES POUR OPTIMISATION DU SITE **/
+
+.row h2
+{
+    font-size: 23px;
+    padding: 0px 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -30px;
+}
+.citation  
+{
+    margin: 30px;
+    border: 1px solid transparent;
+    background-color: rgb(227, 215, 183);
+}
+
+.citation p
+{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #FFF;
+    padding: 10px 10px 0px 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.citation p:nth-child(2)
+{
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.col-sm-12 h2
+{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.col-sm-12 p, .col-sm-14 p
+{
+    font-size: 18px;
+}
+
+.col-sm-14
+{
+    position: relative;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.col-sm-14 h2
+{
+    margin-top: -15px;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.col-sm-13 p
+{
+    font-size: 25px;
+    text-decoration: overline;
+}
+#bloc-5-cta h2
+{
+    position:relative;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.col-sm-4
+{
+    color : white;
+}
+
+.col-sm-6 img
+{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+/** ******************************** **/
+
 
 a,
 button {
@@ -31,7 +119,6 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,11 +132,11 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 35px;
 }
 
 .bloc-md {
-    padding: 50px;
+    padding: 62px 0px 0px 0px;
 }
 
 .bloc-sm {
@@ -133,7 +220,8 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(32, 32, 32);
+    margin: 10px 0px 20px 0px;
 }
 
 .d-bloc .a-btn:hover,
@@ -264,13 +352,6 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.voffset {
-    margin-top: 30px;
-}
-
-.voffset-lg {
-    margin-top: 80px;
-}
 
 .row-no-gutters {
     margin-right: 0;
@@ -284,7 +365,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 60px;
 }
 
 .navbar {
@@ -677,7 +758,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -718,7 +799,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto auto 40px auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -752,13 +833,8 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
-
 .bold-link {
-    font-weight: 900;
+    font-size: 25px;
     text-decoration: underline!important;
 }
 
@@ -771,16 +847,16 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #e3d7b7;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #e3d7b7;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -809,13 +885,7 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
@@ -901,10 +971,7 @@ h4 {
     h5,
     h6,
     p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    }
+    #disqus_thread 
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1002,7 +1069,7 @@ h4 {
         display: none;
     }
     .voffset {
-        margin-top: 5px;
+        border: 1px solid black;
     }
     .voffset-md {
         margin-top: 20px;
